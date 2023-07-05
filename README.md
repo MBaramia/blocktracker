@@ -1,6 +1,6 @@
-# Cryptocurrency Dashboard
+# Cryptocurrency Tracker
 
-This is a web application that provides a dashboard for monitoring cryptocurrency prices. It allows users to view a list of cryptocurrencies, their current prices, and a chart displaying the price change over the past 24 hours.
+This is a web application that provides a service for monitoring cryptocurrency prices. It allows users to view a list of cryptocurrencies, their current prices, and a chart displaying the price change over the past 24 hours, using real time data from the CoinGecko API
 
 ## Features
 
