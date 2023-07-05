@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='dash.css')}}">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="splide">
+        <div class="splide__track">
+            <ul class="splide__list" id="crypto-slider">
+                {% for coin in watchlist %}
+                <li class="splide__slide">
+                    <h2 class="crypto-name">{{ coin.name }}</h2>
+                    <p class="crypto-price">Current Price: ${{ coin.current_price }}</p>
+                    <div class="crypto-chart" id="chart-{{ coin.id }}"></div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <script>
+      // Define the watchlist variable with the data passed from Flask
+      const watchlist = {{ watchlist|tojson }};
+    </script>
+    
+    <script src="https://unpkg.com/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{url_for('static', filename='file.js')}}"></script>
+</body>
+</html>

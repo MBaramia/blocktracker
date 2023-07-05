@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Crypto Watchlist</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="{{url_for('static', filename='script.js')}}"></script>
+</head>
+<body>
+  <header>
+    <h1>BlockTracker
+      <nav>
+        <ul>
+          <li><a href="{{url_for('login')}}">Login</a></li>
+          <li><a href="{{url_for('register')}}">Register</a></li>
+        </ul>
+      </nav>
+    </h1>
+  </header>
+  <div class="over"><h1>The Easiest Way To</h1></div>
+  <div class="under"><h1>Track Your Favourite Coins!</h1></div>
+  <a href="{{url_for('dashboard')}}"><button class="shadow_btn">View Dashboard</button></a>
+  <button class="shadow_btn" onclick="openPopup()" id="add-watchlist-btn">Add Watchlist</button>
+  <table id="coin-table">
+    <thead>
+      <tr>
+        <th>Coin</th>
+        <th>Price (USD)</th>
+        <th>Liquidity</th>
+        <th>Daily % Change</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <!-- Popup HTML -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="popup-close" onclick="closePopup()">×</span>
+      <div class="coin-search-container">
+        <label for="coin-search" style="background-color: transparent; text-align: center;">Search Coin:</label>
+        <input type="text" id="coin-search" class="coin-search-input" oninput="searchCoins()" />
+      </div>
+      <div id="coin-options" class="coin-options"></div>
+      <button class="shadow_btn" onclick="openPopup()">Add Coin to Watchlist</button>
+    </div>
+  </div>
+  
+  <script src="{{url_for('static', filename='script.js')}}"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+.splide {
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.splide__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 2rem;
+}
+
+.splide__slide h2 {
+  margin-bottom: 1rem;
+}
+
+.splide__slide p {
+  margin-bottom: 1rem;
+}
+
+/* CSS for the slide contents */
+.crypto-name {
+  color: #f2f2f2;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.crypto-price {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.crypto-chart {
+  height: 200px;
+  /* Add any additional styling for the chart container */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #252524;
+  margin: 0;
+  padding: 0;
+  color: white;
+}

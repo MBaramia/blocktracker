@@ -1,0 +1,196 @@
+header {
+	background-color: #010101;
+	color: #ffffff;
+	padding: 10px;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  padding: 10px 10px 10px 10px;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #252524;
+  color: #ffffff;
+  }
+  main {
+    text-align: center;
+    padding-top: 12px;
+    margin: 20px;
+  }
+
+  p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+   
+   }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #252524;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+header h1 {
+	margin: 0;
+	font-size: 38px;
+}
+
+nav {
+	float: right;
+	margin: 0;
+	padding: 0px;
+	font-size: 22px
+}
+
+nav ul {
+	margin: 0;
+	padding: 12px;
+
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 18px;
+}
+
+
+nav a {
+	color: #ffffff;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+h2{
+  text-align: center;
+  margin-top: 45px;
+}
+
+.under{
+    color: rgb(0, 140, 255);
+    text-align: center;
+}
+.over{
+    text-align: center;
+}
+/* Existing CSS styles */
+
+table {
+  padding-top: 10px;
+  width: 80%;
+  margin: 0 auto; /* Center the table horizontally */
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid white;
+}
+
+th {
+  background-color: black;
+  color: white;
+}
+
+.green {
+  color: #34c759;
+}
+
+.red {
+  color: #ff3b30;
+}
+
+#watchlist {
+  color: white;
+}
+
+.shadow_btn {
+  padding: 10px 20px;
+  text-align: center;
+  border: none;
+  font-size: 5px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+  display: block;
+  margin: 20px auto; /* Add margin to separate the button from the table */
+}
+
+.shadow_btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255),
+              0 0 25px rgb(0, 140, 255),
+              0 0 50px rgb(0, 140, 255),
+              0 0 100px rgb(0, 140, 255);
+}
+/* Popup CSS styles */
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+.popup-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  background-color: #252524;
+  color: white;
+  border-radius: 5px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.coin-search-container {
+  margin-bottom: 20px;
+}
+
+.coin-search-input {
+  align-items: center;
+  padding: 8px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.coin-options {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.coin-option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.coin-option:hover {
+  background-color: #010101;
+}
