@@ -49,7 +49,6 @@ Note: You may need to modify the Flask routes and API calls to fit your specific
 
 Here are some potential enhancements that can be made to the project:
 
-- User authentication: Implement user registration and login functionality to provide personalized watchlists for individual users.
 - Additional data visualization: Expand the dashboard to include more detailed charts and analytics for each cryptocurrency.
 - Portfolio tracking: Allow users to input their cryptocurrency holdings and track their portfolio performance over time.
 - Alerts and notifications: Implement alerts and notifications for price changes, volume spikes, or other market events.
